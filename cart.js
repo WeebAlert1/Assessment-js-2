@@ -37,7 +37,7 @@ const cart = [
 
 const summedPrice = cart.reduce((acc, curr) => cart.price = acc + curr);
 
-console.log(summedPrice);
+console.log(summedPrice); 
 
 
 //////////////////PROBLEM 2////////////////////
@@ -56,7 +56,11 @@ console.log(summedPrice);
 */
 
 //CODE HERE
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const subtax = cartTotal * tax;
+    const total = subtax - couponValue;
+    return total; 
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -81,7 +85,10 @@ console.log(summedPrice);
 
 /*
     TEXT ANSWER HERE
-
+    name = String, ie 'bob' Why? We need to know their name so we can confirm that it's them
+    amountDue = number, ie 45 Why? So the custmers can know how much they need to pay
+    paymentMethod = string, ie 'Mastercard' Why? So we can know how they are planning to pay
+    vetDiscount = boolen Why? So we can give them a discount if they are a vet!
 */
 
 /*
@@ -90,3 +97,9 @@ console.log(summedPrice);
 */
 
 //CODE HERE
+const customer = {
+    name: 'John',
+    amountDue: 32,
+    paymentMethod: 'cash',
+    vetDiscount: true,
+}
