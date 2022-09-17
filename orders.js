@@ -70,4 +70,3 @@ console.log(firstTicket);
 //CODE HERE
 firstTicket.updateStatus('Cooking');
 
-console.log(firstTicket);

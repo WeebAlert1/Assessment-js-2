@@ -125,11 +125,9 @@ const deals = [
 
 //CODE HERE
 
-// I am so lost... nothing I tried worked...
-let title = deals.title;
- deals[title] = title.replace('%15','%10'); 
-
- console.log(deals);
+deals[0].title = deals[0].title.replace('15','10'); 
+console.log(deals[0].title)
+// console.log(deals);
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -144,3 +142,6 @@ let title = deals.title;
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.replace('March', 'April');
+
+console.log(deals);

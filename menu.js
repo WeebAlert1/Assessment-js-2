@@ -7,7 +7,6 @@
     and filtering those arrays. 
 */
 
-
 //////////////////PROBLEM 1////////////////////
 /*  
     Create an object called `pizza` that has 6
@@ -32,14 +31,13 @@
 
 //CODE HERE
 const pizza = {
-    name: `Cheese`,
-    price: 5,
-    category: `classic`,
-    popularity: 8,
-    raiting: 9,
-    tags: ['kids', 'classic', 'cheep'],
-}
-
+  name: `Cheese`,
+  price: 5,
+  category: `classic`,
+  popularity: 8,
+  raiting: 9,
+  tags: ["kids", "classic", "cheep"],
+};
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -70,7 +68,7 @@ console.log(pizza.tags[1]);
 */
 
 //CODE HERE
-let {price} = pizza;
+let { price } = pizza;
 
 console.log(price);
 
@@ -82,7 +80,7 @@ console.log(price);
 */
 
 //CODE HERE
-let {category} = pizza;
+let { category } = pizza;
 
 console.log(category);
 
@@ -99,12 +97,43 @@ console.log(category);
 */
 
 //CODE HERE
-const foodArr = [{'Name':'CornDog','Price':1,'Catagory':'snack','popularity':9,'tags':['deepfry','kids','popularitem','snack']},
-{'Name':'buger','Price':8,'Catagory':'meal','popularity':5,'tags':['filling','noDairy','custem','hot']},
-{'Name':'MilkShake','Price':6,'Catagory':'Drink','popularity':10,'tags':['cold','drink','dessert','popular']},
-{'Name':'FrenchFrys','Price':3,'Catagory':'side','popularity':6,'tags':['hot','side','kids','low-cal']},
-{'Name':'Wrap','Price':8,'Catagory':'meal','popularity':7,'tags':['meal','Gluten-Free','custom','filling']}];
-
+const foodArr = [
+  {
+    Name: "CornDog",
+    Price: 1,
+    Catagory: "snack",
+    popularity: 9,
+    tags: ["deepfry", "kids", "popularitem", "snack"],
+  },
+  {
+    Name: "buger",
+    Price: 8,
+    Catagory: "meal",
+    popularity: 5,
+    tags: ["filling", "noDairy", "custem", "hot"],
+  },
+  {
+    Name: "MilkShake",
+    Price: 6,
+    Catagory: "Drink",
+    popularity: 10,
+    tags: ["cold", "drink", "dessert", "popular"],
+  },
+  {
+    Name: "FrenchFrys",
+    Price: 3,
+    Catagory: "side",
+    popularity: 6,
+    tags: ["hot", "side", "kids", "low-cal"],
+  },
+  {
+    Name: "Wrap",
+    Price: 8,
+    Catagory: "meal",
+    popularity: 7,
+    tags: ["meal", "Gluten-Free", "custom", "filling"],
+  },
+];
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -120,11 +149,11 @@ const foodArr = [{'Name':'CornDog','Price':1,'Catagory':'snack','popularity':9,'
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((Name) => {
-   if (Name.tags.includes('hot') === true){
-    return Name
-   } 
-})
+const filteredFood = foodArr.filter((name) => {
+  if (name.tags.includes("hot")) {
+    return name;
+  }
+});
 
 console.log(filteredFood);
 
@@ -169,8 +198,8 @@ console.log(filteredFood);
 
 //CODE HERE
 const filterByProperty = (properity, number, name) => {
-    const arr = [];
-}
+  const arr = [];
+};
 
 /*
     Invoke the `filterByProperty` function passing
