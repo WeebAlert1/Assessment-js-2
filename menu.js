@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: `Cheese`,
+    price: 5,
+    category: `classic`,
+    popularity: 8,
+    raiting: 9,
+    tags: ['kids', 'classic', 'cheep'],
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +60,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -63,7 +70,9 @@
 */
 
 //CODE HERE
+let {price} = pizza;
 
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +82,9 @@
 */
 
 //CODE HERE
+let {category} = pizza;
 
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,7 +99,11 @@
 */
 
 //CODE HERE
-
+const foodArr = [{'Name':'CornDog','Price':1,'Catagory':'snack','popularity':9,'tags':['deepfry','kids','popularitem','snack']},
+{'Name':'buger','Price':8,'Catagory':'meal','popularity':5,'tags':['filling','noDairy','custem','hot']},
+{'Name':'MilkShake','Price':6,'Catagory':'Drink','popularity':10,'tags':['cold','drink','dessert','popular']},
+{'Name':'FrenchFrys','Price':3,'Catagory':'side','popularity':6,'tags':['hot','side','kids','low-cal']},
+{'Name':'Wrap','Price':8,'Catagory':'meal','popularity':7,'tags':['meal','Gluten-Free','custom','filling']}];
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,9 +120,13 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((Name) => {
+   if (Name.tags.includes('hot') === true){
+    return Name
+   } 
+})
 
-
+console.log(filteredFood);
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -149,7 +168,9 @@
 */
 
 //CODE HERE
-
+const filterByProperty = (properity, number, name) => {
+    const arr = [];
+}
 
 /*
     Invoke the `filterByProperty` function passing
