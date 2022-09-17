@@ -197,8 +197,9 @@ console.log(filteredFood);
 */
 
 //CODE HERE
-const filterByProperty = (properity, number, name) => {
+const filterByProperty = (properity, number, type) => {
   const arr = [];
+  arr = foodArr.filter()
 };
 
 /*
